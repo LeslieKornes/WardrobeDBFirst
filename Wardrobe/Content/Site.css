@@ -1,20 +1,9 @@
 ﻿body {
-    padding-top: 0;
+    padding-top: 50px;
     padding-bottom: 20px;
-}
-
-.homePage {
-    background-image: url('Images/backgroundhome.jpg');
+    background-image: url('Images/HomePage.jpg');
     background-size: 100%;
-    height: 500px;
-    width: 1200px;
-    padding: 0 0;
 }
-
-.table img {
-    width: 100px;
-}
-
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -29,6 +18,40 @@
     white-space: normal;
 }
 
+.navbar-brand {color: #FFFF00 !important; font-family: 'Pacifico', cursive;}
+.navbar-brand:visited { color: #FFFF00 !important; font-family: 'Pacifico', cursive; }
+.navbar-default-color { color: #FFFF00 !important; font-family: 'Pacifico', cursive; }
+.navbar-inverse { color : #FFFF00 !important; font-family: 'Pacifico', cursive; }
+
+.dropdown-toggle { color: #ff69b4 !important }
+.dropdown-toggle:visited { color: #ff69b4 !important }
+.navbar-default-color.dropdown-toggle { color: #ff69b4 !important }
+.navbar-inverse.dropdown-toggle { color: #ff69b4 !important }
+
+
+.thumbnail {
+    width: 265px;
+    height: 235px;
+    padding: 0 0;
+    opacity: .8;
+    position:relative;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.pink {
+    background-color: #ff69b4;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -36,35 +59,110 @@ textarea {
     max-width: 280px;
 }
 
-.footer 
-{
-      background-color: #555;
-      color: white;
-      padding: 15px;
+.jumbotron h1, p {
+    font-family: 'Pacifico', cursive;
 }
 
- /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
+.jumbotron h1 {
+    padding-top: 35px;
+    color: #0000ff;
+    font-size: 95px;
+}
+
+.jumbotron p {
+    padding-top: 35px;
+    color: #00ff00;
+    font-size: 35px;
+}
+
+.jumbotron {
+    background: rgb(169,169,169); /* This is for ie8 and below */
+    background: rgba(169,169,169, 0.7);
+    margin-top: 90px;
+    padding-top: 30px;
+    text-align: center;
+    height: 400px;
+}
+
+.table img {
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    padding: 0 50px 0 50px;
+    background-image: url('Images/HomePage.jpg');
+    background-repeat: no-repeat;
+}
+
+.homePage {
+    object-fit: fill;
+    height: 500px;
+    zoom: 125%;
+}
+
+.table img {
+    width: 100px;
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.container-fluid {
+    background-color: white;
+}
+ .navbar {
       margin-bottom: 0;
       border-radius: 0;
-    }
+}
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+.row.content {
+    height: 520px;
+    margin:0 0;
+    padding: 0 0;
+}
     
-    /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
+    padding-top: 40px;
+    background-color: #fd0ef8;
+    height: 100%;
+      border-radius: 0;
+      }
   
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
+.well {
+    background-color: #e0e2f9;
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding: 0 0;
+}  
+  
+@media screen and (max-width: 767px) {
+    .sidenav {
         height: auto;
         padding: 15px;
-      }
-      .row.content {height:auto;} 
     }
+}*/
+

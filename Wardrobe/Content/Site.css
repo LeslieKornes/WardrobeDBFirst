@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url('Images/HomePage.jpg');
+    background-image: url('Images/HomePage.jpg'); /*Setting background pic*/
     background-size: 100%;
 }
 
@@ -10,33 +10,67 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
     white-space: normal;
 }
-
-.navbar-brand {color: #FFFF00 !important; font-family: 'Pacifico', cursive;}
-.navbar-brand:visited { color: #FFFF00 !important; font-family: 'Pacifico', cursive; }
-.navbar-default-color { color: #FFFF00 !important; font-family: 'Pacifico', cursive; }
-.navbar-inverse { color : #FFFF00 !important; font-family: 'Pacifico', cursive; }
-
-.dropdown-toggle { color: #ff69b4 !important }
-.dropdown-toggle:visited { color: #ff69b4 !important }
-.navbar-default-color.dropdown-toggle { color: #ff69b4 !important }
-.navbar-inverse.dropdown-toggle { color: #ff69b4 !important }
-
-
-.thumbnail {
-    width: 265px;
-    height: 235px;
-    padding: 0 0;
-    opacity: .8;
-    position:relative;
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
 }
 
+
+/*~~~NAVBAR~~*/
+
+/*Navbar Text Color and Font*/
+.navbar-brand {
+    color: #FFFF00 !important;
+    font-family: 'Pacifico', cursive;
+}
+
+    .navbar-brand:visited {
+        color: #FFFF00 !important;
+        font-family: 'Pacifico', cursive;
+    }
+
+.navbar-default-color {
+    color: #FFFF00 !important;
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-inverse {
+    color: #FFFF00 !important;
+    font-family: 'Pacifico', cursive;
+}
+
+/*Navbar Item Color*/
+.dropdown-toggle {
+    color: #ff69b4 !important;
+}
+
+    .dropdown-toggle:visited {
+        color: #ff69b4 !important;
+    }
+
+.navbar-default-color.dropdown-toggle {
+    color: #ff69b4 !important;
+}
+
+.navbar-inverse.dropdown-toggle {
+    color: #ff69b4 !important;
+}
+
+/*Setting Navbar Dropdown Colors*/
 .green {
     background-color: #00ff00;
 }
@@ -52,117 +86,128 @@
 .pink {
     background-color: #ff69b4;
 }
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+
+/*~~~HOME PAGE~~~*/
+
+/*Customizing Panel Section*/
+.thehomedeets {
+    margin-bottom: 30px;
+    height: 350px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.jumbotron h1, p {
+    /*Customizing Panel Margin, Font and Alignment*/
+    .thehomedeets h1, h3 {
+        margin-top: 60px;
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+    }
+
+    /*Customizing Panel h1 Color and Size*/
+    .thehomedeets h1 {
+        font-size: 95px;
+        color: #0000ff;
+    }
+
+    /*Customizing Panel h3 Color and Size*/
+    .thehomedeets h3 {
+        color: #00ff00;
+        font-size: 45px;
+    }
+
+/*Customizing Thumbnails*/
+.home {
+    padding: 0 0;
+    opacity: .8;
+    position: relative;
+}
+
+/*~~~INDEX PAGE~~~*/
+
+/*Customizing Panel*/
+.thedeets {
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    /*Customizing Panel Text*/
+    .thedeets h2 {
+        font-family: 'Pacifico', cursive;
+        color: #00ff00;
+        text-align: center;
+        font-size: 55px;
+    }
+
+/*Setting Height and Font Detail for Index Wardrobe Item Thumbnails*/
+.indexBox {
+    width: 225px;
+    height: 300px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+    /*Setting Thumbnail Image Size*/
+    .indexBox img {
+        height: 150px;
+    }
+
+    /*Setting Thumbnail p Text Color*/
+    .indexBox p {
+        color: #ff69b4;
+    }
+
+/*~~~DETAILS PAGE~~~*/
+
+/*Cusotmizing Details Panel*/
+.thedeets2 {
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    /*Customizing Panel Text*/
+    .thedeets2 h2 {
+        font-family: 'Pacifico', cursive;
+        font-size: 35px;
+        text-align: center;
+    }
+
+/*Setting Image Height*/
+.detailsPic img {
+    max-width: 500px;
+    height: 400px;
+    padding-top:30px;
+}
+
+/*Customizing Detail Font Colors*/
+.greenDeets {
+    color: #00ff00;
+}
+
+.yellowDeets {
+    color: #ffff00;
+}
+
+.blueDeets {
+    color: #0000ff;
+}
+
+.pinkDeets {
+    color: #ff69b4;
+}
+
+/*Customizing Edit and BackToList Links*/
+.yellowDeets a {
+    color: #ffff00;
+    font-size: 15px;
     font-family: 'Pacifico', cursive;
 }
 
-.jumbotron h1 {
-    padding-top: 35px;
-    color: #0000ff;
-    font-size: 95px;
-}
-
-.jumbotron p {
-    padding-top: 35px;
-    color: #00ff00;
-    font-size: 35px;
-}
-
-.jumbotron {
-    background: rgb(169,169,169); /* This is for ie8 and below */
-    background: rgba(169,169,169, 0.7);
-    margin-top: 90px;
-    padding-top: 30px;
+.thedeets2 p {
     text-align: center;
-    height: 400px;
 }
 
-.table img {
-    width: 100px;
+/*Customizing Footer*/
+.footer p {
+    color: #00ff00;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*body {
-    padding: 0 50px 0 50px;
-    background-image: url('Images/HomePage.jpg');
-    background-repeat: no-repeat;
-}
-
-.homePage {
-    object-fit: fill;
-    height: 500px;
-    zoom: 125%;
-}
-
-.table img {
-    width: 100px;
-}
-
-
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-.container-fluid {
-    background-color: white;
-}
- .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-}
-    
-.row.content {
-    height: 520px;
-    margin:0 0;
-    padding: 0 0;
-}
-    
-    .sidenav {
-    padding-top: 40px;
-    background-color: #fd0ef8;
-    height: 100%;
-      border-radius: 0;
-      }
-  
-.well {
-    background-color: #e0e2f9;
-    margin-bottom: 50px;
-    font-size: 50px;
-    padding: 0 0;
-}  
-  
-@media screen and (max-width: 767px) {
-    .sidenav {
-        height: auto;
-        padding: 15px;
-    }
-}*/
-

@@ -4,6 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -21,14 +29,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-
-                    <li class="dropdown">
+                    <li class="dropdown">       @*Navbar Dropdown*@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clothing Categories<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Tops", "Index", "WardrobeItems", new { itemTypeId = 1 }, null)</li>
-                            <li>@Html.ActionLink("Bottoms", "Index", "WardrobeItems", new { itemTypeId = 2 }, null)</li>
-                            <li>@Html.ActionLink("Shoes", "Index", "WardrobeItems", new { itemTypeId = 3 }, null)</li>
-                            <li>@Html.ActionLink("Accessories", "Index", "WardrobeItems", new { itemTypeId = 4 }, null)</li>
+                        <ul class="dropdown-menu">          
+  @*Added classes here*@    <li class="blue">@Html.ActionLink("Tops", "Index", "WardrobeItems", new { itemTypeId = 1 }, null)</li>
+  @*to customize links*@    <li class="pink">@Html.ActionLink("Bottoms", "Index", "WardrobeItems", new { itemTypeId = 2 }, null)</li>
+     @*on dropdown*@        <li class="green">@Html.ActionLink("Shoes", "Index", "WardrobeItems", new { itemTypeId = 3 }, null)</li>
+                            <li class="yellow">@Html.ActionLink("Accessories", "Index", "WardrobeItems", new { itemTypeId = 4 }, null)</li>
                         </ul>
                 </ul>
             </div>
@@ -37,7 +44,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="footer">
             <p>&copy; @DateTime.Now.Year - My Wardrobe Project</p>
         </footer>
     </div>

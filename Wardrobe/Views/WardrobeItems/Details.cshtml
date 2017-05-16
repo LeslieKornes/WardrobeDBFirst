@@ -4,71 +4,28 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>WardrobeItem</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-
-        <dd>
-            <img src="@Html.DisplayFor(model => model.Image)" />
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color.Color1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color.Color1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Itemtype.ItemType1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Itemtype.ItemType1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.Occasion1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.Occasion1)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.Season1)
-        </dd>
-
-    </dl>
+<div class="panel panel-default thedeets2">
+    <div class="panel-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1 detailsPic">
+                    <img src="@Html.DisplayFor(model => model.Image)" />
+                </div>
+                <div class="col-md-4">
+                    <h2 class="blueDeets">@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h2>
+                    <h2 class="pinkDeets">@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)</h2>
+                    <h2 class="yellowDeets">@Html.DisplayNameFor(model => model.Color): @Html.DisplayFor(model => model.Color.Color1)</h2>
+                    <h2 class="greenDeets">Item Type: @Html.DisplayFor(model => model.Itemtype.ItemType1)</h2>
+                    <h2 class="blueDeets">@Html.DisplayNameFor(model => model.Occasion): @Html.DisplayFor(model => model.Occasion.Occasion1)</h2>
+                    <h2 class="pinkDeets">@Html.DisplayNameFor(model => model.Season): @Html.DisplayFor(model => model.Season.Season1)</h2>
+                    <p class="yellowDeets">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.WardrobeItemID })
+                        
+                            @Html.ActionLink("Back to List", "Index", null, new { id = "sentId", style = "color:#00ff00" })
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.WardrobeItemID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

@@ -11,13 +11,41 @@ namespace Wardrobe.Controllers
         private WardrobeEntities db = new WardrobeEntities();
 
         // GET: WardrobeItems
+        //public ActionResult Index(int itemTypeId = 0)
+        //{
+        //    var wardrobeItems = db.WardrobeItems.Include(w => w.Color).Include(w => w.Itemtype).Include(w => w.Occasion).Include(w => w.Season);
+
+        //    if (itemTypeId > 0)
+        //    {
+        //        wardrobeItems = wardrobeItems.Where(item => item.ItemTypeID == itemTypeId);
+        //    }
+        //    return View(wardrobeItems.ToList());
+        //}
+
         public ActionResult Index(int itemTypeId = 0)
         {
             var wardrobeItems = db.WardrobeItems.Include(w => w.Color).Include(w => w.Itemtype).Include(w => w.Occasion).Include(w => w.Season);
 
+            ViewBag.TypeName = "";
             if (itemTypeId > 0)
             {
                 wardrobeItems = wardrobeItems.Where(item => item.ItemTypeID == itemTypeId);
+            }
+            if (itemTypeId==1)
+            {
+                ViewBag.TypeName = "Tops";
+            }
+            if (itemTypeId == 2)
+            {
+                ViewBag.TypeName = "Bottoms";
+            }
+            if (itemTypeId == 3)
+            {
+                ViewBag.TypeName = "Shoes";
+            }
+            if (itemTypeId == 4)
+            {
+                ViewBag.TypeName = "Accessories";
             }
             return View(wardrobeItems.ToList());
         }

@@ -37,18 +37,15 @@ textarea {
     color: #FFFF00 !important;
     font-family: 'Pacifico', cursive;
 }
-
     .navbar-brand:visited {
         color: #FFFF00 !important;
         font-family: 'Pacifico', cursive;
     }
-
-.navbar-default-color {
+    .navbar-default-color {
     color: #FFFF00 !important;
     font-family: 'Pacifico', cursive;
 }
-
-.navbar-inverse {
+    .navbar-inverse {
     color: #FFFF00 !important;
     font-family: 'Pacifico', cursive;
 }
@@ -57,16 +54,13 @@ textarea {
 .dropdown-toggle {
     color: #ff69b4 !important;
 }
-
     .dropdown-toggle:visited {
         color: #ff69b4 !important;
     }
-
-.navbar-default-color.dropdown-toggle {
+    .navbar-default-color.dropdown-toggle {
     color: #ff69b4 !important;
 }
-
-.navbar-inverse.dropdown-toggle {
+    .navbar-inverse.dropdown-toggle {
     color: #ff69b4 !important;
 }
 
@@ -74,15 +68,12 @@ textarea {
 .green {
     background-color: #00ff00;
 }
-
 .yellow {
     background-color: #ffff00;
 }
-
 .blue {
     background-color: #0000ff;
 }
-
 .pink {
     background-color: #ff69b4;
 }
@@ -96,20 +87,17 @@ textarea {
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
     /*Customizing Panel Margin, Font and Alignment*/
     .thehomedeets h1, h3 {
         margin-top: 60px;
         font-family: 'Pacifico', cursive;
         text-align: center;
     }
-
     /*Customizing Panel h1 Color and Size*/
     .thehomedeets h1 {
         font-size: 95px;
         color: #0000ff;
     }
-
     /*Customizing Panel h3 Color and Size*/
     .thehomedeets h3 {
         color: #00ff00;
@@ -130,7 +118,6 @@ textarea {
     margin-top: 120px;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
     /*Customizing Panel Text*/
     .thedeets h2 {
         font-family: 'Pacifico', cursive;
@@ -146,12 +133,14 @@ textarea {
     font-family: 'Pacifico', cursive;
     text-align: center;
 }
-
     /*Setting Thumbnail Image Size*/
+    /*Setting Thumbnail h3 Color*/
+    .indexBox h3 {
+        color: #0000ff;
+    }
     .indexBox img {
         height: 150px;
     }
-
     /*Setting Thumbnail p Text Color*/
     .indexBox p {
         color: #ff69b4;
@@ -164,7 +153,6 @@ textarea {
     margin-top: 120px;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
     /*Customizing Panel Text*/
     .thedeets2 h2 {
         font-family: 'Pacifico', cursive;
@@ -206,5 +194,7 @@ textarea {
 
 /*Customizing Footer*/
 .footer p {
-    color: #00ff00;
+    color: #ffff00;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
 }
